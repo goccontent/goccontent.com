@@ -6,35 +6,37 @@
 <title>Bản tin Góc Content</title>
 <meta property="og:title" content="Bản tin Góc Content">
 <meta property="og:description" content="Các số bản tin nhà ATA, Nhà Đom Đóm và các cộng đồng">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Caveat:wght@600&family=Be+Vietnam+Pro:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;800&display=swap">
 <style>
-:root { --paper:#f5efe1; --card:#fffdf7; --ink:#1a1815; --ink-soft:#4a4640; --ink-mute:#8a8377; --leaf-deep:#285e30; --seal:#b8302c; }
-@media (prefers-color-scheme: dark) { :root { --paper:#1b1915; --card:#221f1a; --ink:#ece4d2; --ink-soft:#c4bba9; --ink-mute:#8f8777; --leaf-deep:#9fd0a6; --seal:#d0504a; color-scheme:dark } }
+:root { --paper:#fffdf6; --card:#fff; --ink:#14213d; --ink-soft:#3d4763; --ink-mute:#6b7389; --y:#f5c400; --y2:#fff3bf; }
+@media (prefers-color-scheme: dark) { :root { --paper:#0f1729; --card:#17213a; --ink:#eef1f8; --ink-soft:#c3c9d8; --ink-mute:#8d95aa; --y2:#3a3416; color-scheme:dark } }
 * { box-sizing:border-box }
-body { margin:0; background:var(--paper); color:var(--ink); font-family:"Be Vietnam Pro",system-ui,sans-serif }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:"Lexend",system-ui,sans-serif }
 .wrap { max-width:720px; margin:0 auto; padding:28px 16px 48px }
-.seal { display:inline-block; padding:6px 10px; background:var(--seal); color:#fff8e7; font:700 12px "Fraunces",serif; letter-spacing:.08em; text-transform:uppercase; box-shadow:3px 3px 0 0 var(--ink) }
-h1 { margin:14px 0 4px; font:900 clamp(30px,7vw,44px)/1.05 "Fraunces",serif; letter-spacing:-.02em }
-.deck { margin:0 0 22px; font:600 20px "Caveat",cursive; color:var(--ink-mute) }
-.list { display:grid; gap:16px }
-.card { display:grid; grid-template-columns:120px 1fr; gap:14px; align-items:center; padding:10px; background:var(--card); border:1px solid var(--ink); box-shadow:3px 3px 0 0 var(--leaf-deep); color:inherit; text-decoration:none }
-.card:active { transform:translate(2px,2px); box-shadow:1px 1px 0 0 var(--leaf-deep) }
-.card img { width:120px; height:90px; object-fit:cover; display:block }
-.card__date { font:600 17px "Caveat",cursive; color:var(--ink-mute) }
-.card__title { font:700 17px/1.25 "Fraunces",serif }
-.end { margin-top:28px; text-align:center; font:600 18px "Caveat",cursive; color:var(--ink-mute) }
+.badge { display:inline-flex; align-items:center; gap:8px; padding:6px 14px 6px 6px; background:var(--y); color:#14213d; border-radius:999px; font:800 12px "Lexend"; letter-spacing:.06em; text-transform:uppercase }
+.badge svg { width:26px; height:26px; display:block }
+h1 { margin:16px 0 6px; font:800 clamp(30px,7vw,42px)/1.1 "Lexend"; letter-spacing:-.02em }
+h1 span { background:linear-gradient(transparent 58%, var(--y) 58%) }
+.deck { margin:0 0 24px; font:500 14px "Lexend"; color:var(--ink-mute) }
+.list { display:grid; gap:14px }
+.card { display:grid; grid-template-columns:120px 1fr; gap:14px; align-items:center; padding:10px; background:var(--card); border-radius:14px; color:inherit; text-decoration:none; box-shadow:0 1px 0 #0001, 0 6px 18px #14213d14 }
+.card:active { transform:translateY(1px) }
+.card img { width:120px; height:90px; object-fit:cover; display:block; border-radius:9px }
+.card__date { display:inline-block; margin-bottom:4px; padding:1px 8px; background:var(--y2); border-radius:999px; font:600 11.5px "Lexend"; color:var(--ink-soft) }
+.card__title { font:800 16px/1.3 "Lexend" }
+.end { margin-top:28px; text-align:center; font:700 12px "Lexend"; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute) }
 </style>
 </head>
 <body>
 <main class="wrap">
-<span class="seal">Bản tin 🌱</span>
-<h1>Bản tin Góc Content</h1>
+<span class="badge"><svg viewBox="0 0 96 96" aria-hidden="true"><path d="M18 10h44l18 18v58H18z" fill="#fff"/><path d="M62 10v18h18z" fill="#14213d"/><text x="48" y="66" text-anchor="middle" font-family="Lexend, sans-serif" font-weight="800" font-size="28" fill="#14213d">GC</text></svg>Góc Content</span>
+<h1><span>Bản tin</span> Góc Content</h1>
 <p class="deck">Tin mới nhất ở trên cùng</p>
 <div class="list">
-<a class="card" href="ata-2026-10-19/"><img src="ata-2026-10-19/cover.jpg" alt=""><div class="card__body"><div class="card__date">Bản tin nhà ATA — 19/10/2026</div><div class="card__title">Đoàn ATA xuống đất Vĩnh Trung lúc 9 giờ, gửi về nhà 75 khung hình từ Nha Trang</div></div></a>
-<a class="card" href="domdom-2026-10-19/"><img src="domdom-2026-10-19/cover.jpg" alt=""><div class="card__body"><div class="card__date">Bản tin Nhà Đom Đóm — 07 đến 19/10/2026</div><div class="card__title">Bầu xong Ban Đại diện 16 phụ huynh, các gia đình tự nấu cơm cho con từ 13/10</div></div></a>
+<a class="card" href="ata-2026-10-19/"><img src="ata-2026-10-19/cover.jpg" alt=""><div class="card__body"><div class="card__date">Nhà ATA · 19/10/2026</div><div class="card__title">Đoàn ATA xuống đất Vĩnh Trung lúc 9 giờ, gửi về nhà 75 khung hình từ Nha Trang</div></div></a>
+<a class="card" href="domdom-2026-10-19/"><img src="domdom-2026-10-19/cover.jpg" alt=""><div class="card__body"><div class="card__date">Nhà Đom Đóm · 07–19/10/2026</div><div class="card__title">Bầu xong Ban Đại diện 16 phụ huynh, các gia đình tự nấu cơm cho con từ 13/10</div></div></a>
 </div>
-<p class="end">— hết —</p>
+<p class="end">Hết danh sách</p>
 </main>
 </body>
 </html>
